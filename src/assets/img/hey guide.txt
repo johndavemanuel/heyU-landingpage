@@ -1,6 +1,0 @@
-Lato Font
-background-image: linear-gradient(#cc0033, #ff3333);
-
-BLACK
-363636
-808080

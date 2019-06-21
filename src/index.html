@@ -6,7 +6,7 @@
   <title>HeyU - Chat App</title>
   <link rel="shortcut icon" href="assets/img/logo.ico" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
@@ -23,16 +23,16 @@
     </div>
     <div id="heyU-navbar" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="#about">
           ABOUT
         </a>
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="#faq">
           FAQ
         </a>
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="#support">
           SUPPORT
         </a>
-        <a class="navbar-item" href="#">
+        <a class="navbar-item" href="#blog">
           BLOG
         </a>
       </div>
@@ -45,41 +45,39 @@
         <div class="columns">
           <div class="column is-7 has-text-left">
             <div class="welcome-section__contents">
-              <h1 class="title is-spaced is-size-1 has-text-white has-text-centered-mobile welcome-section__title">
+              <h1 class="title is-spaced has-text-white has-text-centered-mobile welcome-section__title">
                 Simple, safe
                 <br>
                 & beautiful.
               </h1>
-              <h2 class="subtitle has-text-white has-text-centered-mobile is-size-5">
+              <h2 class="subtitle has-text-white has-text-centered-mobile is-size-4">
                 With <strong class="has-text-white">HeyU</strong>, you'll get fast, simple, and secure messaging!
               </h2>
               <a
-                class="button is-rounded is-medium is-size-6 has-text-primary has-text-centered-mobile welcome-section__btn-download">Download
+                class="button is-rounded is-large has-text-primary has-text-centered-mobile welcome-section__btn-download">Download
                 now</a>
             </div>
           </div>
           <div class="column is-5">
-            <img src="assets/img/welcome.png" alt="">
+            <img class="welcome-section__image" src="assets/img/welcome.png" alt="">
           </div>
         </div>
       </div>
     </div>
   </section>
-  <section class="hero messaging-section">
+  <section class="hero messaging-section" id="about">
     <div class="hero-body">
       <div class="container">
-        <div class="columns  is-vcentered">
+        <div class="columns is-vcentered">
           <div class="column is-6">
             <img src="assets/img/easy-messaging.png" alt="">
           </div>
           <div class="column is-6">
-            <h1 class="title is-spaced is-size-2 has-text-centered-mobile">
+            <h1 class="title is-spaced is-size-1 has-text-centered-mobile">
               Easy Messaging<span class="has-text-primary">.</span>
             </h1>
-            <h2 class="subtitle is-size-6 has-text-centered-mobile">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illum ipsam ipsum sunt minima itaque
-              minus delectus unde doloribus? Vitae commodi ratione maiores. Dignissimos explicabo possimus ipsam
-              adipisci, eligendi beatae.
+            <h2 class="subtitle is-size-5 has-text-centered-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </h2>
           </div>
         </div>
@@ -91,13 +89,11 @@
       <div class="container">
         <div class="columns  is-vcentered">
           <div class="column is-6">
-            <h1 class="title is-spaced is-size-2 has-text-centered-mobile">
+            <h1 class="title is-spaced is-size-1 has-text-centered-mobile">
               Keep in touch<span class="has-text-primary">.</span>
             </h1>
-            <h2 class="subtitle is-size-6 has-text-centered-mobile">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem illum ipsam ipsum sunt minima itaque
-              minus delectus unde doloribus? Vitae commodi ratione maiores. Dignissimos explicabo possimus ipsam
-              adipisci, eligendi beatae.
+            <h2 class="subtitle is-size-5 has-text-centered-mobile">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </h2>
           </div>
           <div class="column is-6">
@@ -107,7 +103,7 @@
       </div>
     </div>
   </section>
-  <section class="hero testimonial-section">
+  <section class="hero testimonial-section" id="faq">
     <div class="hero-body">
       <div class="container">
         <div class="columns">
@@ -123,9 +119,7 @@
               <article class="media">
                 <div class="media-content">
                   <div class="content">
-                    <p class="testimonial-message"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                      efficitur sit amet massa
-                      fringilla egestas. Nullam condimentum luctus turpis.
+                    <p class="testimonial-message"> Lorem ipsum dolor sit amet, onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     </p>
                     <p><a class="has-text-primary has-text-weight-bold" href="#">Booking.com</a></p>
                   </div>
@@ -141,8 +135,7 @@
               <div class="media-content">
                 <div class="content">
                   <p>
-                    <small>John Doe</small>
-                    <br>
+                    <h4 class="testimonial-item__name">John Doe</h4>
                     <small>CEO</small>
                   </p>
                 </div>
@@ -153,9 +146,7 @@
               <article class="media">
                 <div class="media-content">
                   <div class="content">
-                    <p class="testimonial-message"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                      efficitur sit amet massa
-                      fringilla egestas. Nullam condimentum luctus turpis.
+                    <p class="testimonial-message"> Lorem ipsum dolor sit amet, onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     </p>
                     <p><a class="has-text-primary has-text-weight-bold" href="#">Airbnb</a></p>
                   </div>
@@ -171,8 +162,7 @@
               <div class="media-content">
                 <div class="content">
                   <p>
-                    <small>John Doe</small>
-                    <br>
+                    <h4 class="testimonial-item__name">John Doe</h4>
                     <small>CEO</small>
                   </p>
                 </div>
@@ -183,9 +173,7 @@
               <article class="media">
                 <div class="media-content">
                   <div class="content">
-                    <p class="testimonial-message"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
-                      efficitur sit amet massa
-                      fringilla egestas. Nullam condimentum luctus turpis.
+                    <p class="testimonial-message"> Lorem ipsum dolor sit amet, onsectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                     </p>
                     <p><a class="has-text-primary has-text-weight-bold" href="#">Symu.co</a></p>
                   </div>
@@ -201,8 +189,7 @@
               <div class="media-content">
                 <div class="content">
                   <p>
-                    <small>John Doe</small>
-                    <br>
+                    <h4 class="testimonial-item__name">John Doe</h4>
                     <small>CEO</small>
                   </p>
                 </div>
@@ -212,7 +199,7 @@
       </div>
     </div>
   </section>
-  <section class="hero feature-section is-fullheight">
+  <section class="hero feature-section is-fullheight" id="support">
     <div class="hero-body">
       <div class="container">
         <div class="columns is-vcentered">
@@ -224,9 +211,7 @@
                     Start conversation
                   </h1>
                   <h2 class="subtitle has-text-white has-text-centered-mobile has-text-right is-size-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque illum iure ducimus!
-                    Doloremque,
-                    omnis.
+                    Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                   </h2>
                 </div>
                 <div class="column is-2">
@@ -241,9 +226,7 @@
                     Make a free call
                   </h1>
                   <h2 class="subtitle has-text-white has-text-centered-mobile has-text-right is-size-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque illum iure ducimus!
-                    Doloremque,
-                    omnis.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
                   </h2>
                 </div>
                 <div class="column is-2">
@@ -266,9 +249,7 @@
                     Take a picture
                   </h1>
                   <h2 class="subtitle has-text-white has-text-centered-mobile is-size-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque illum iure ducimus!
-                    Doloremque,
-                    omnis.
+                    Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                   </h2>
                 </div>
               </div>
@@ -283,9 +264,7 @@
                     Send a video
                   </h1>
                   <h2 class="subtitle has-text-white has-text-centered-mobile is-size-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque illum iure ducimus!
-                    Doloremque,
-                    omnis.
+                    Lorem ipsum dolor sit amet, con-sectetur adipisicing elit, sed do eiusmod tempor incididunt ut
                   </h2>
                 </div>
               </div>
@@ -295,27 +274,20 @@
       </div>
     </div>
   </section>
-  <section class="hero subscribe-section">
+  <section class="hero subscribe-section" id="blog">
     <div class="hero-body">
       <div class="container">
         <div class="columns">
           <div class="column is-12">
-            <h1 class="title has-text-centered is-spaced is-size-2">
+            <h1 class="title has-text-centered is-spaced is-size-1">
               Subscribe to our newsletter<span class="has-text-primary">.</span>
             </h1>
-            <h2 class="subtitle has-text-centered is-size-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque illum iure ducimus! Doloremque,
-              omnis.
+            <h2 class="subtitle has-text-centered is-size-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             </h2>
-            <div class="field has-addons">
-              <div class="control">
-                <input class="input" type="email" placeholder="Your email address">
-              </div>
-              <div class="control">
-                <a class="button is-rounded is-primary">
-                  Subscribe
-                </a>
-              </div>
+            <div class="newsletter-email center-block">
+              <input class="newsletter-email__input" type="text" placeholder="Your email adress">
+              <button class="btn btn--subscribe" type="submit">Subscribe</button>
             </div>
           </div>
         </div>
@@ -328,14 +300,13 @@
         <div class="columns">
           <div class="column is-12">
             <img class="center-block" src="assets/img/logo.png" alt="">
-            <h1 class="title has-text-centered is-spaced is-size-2">
+            <h1 class="title has-text-centered is-spaced is-size-1">
               Download the app<span class="has-text-primary">.</span>
             </h1>
-            <h2 class="subtitle has-text-centered is-size-6">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia atque illum iure ducimus! Doloremque,
-              omnis.
+            <h2 class="subtitle has-text-centered is-size-5">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
             </h2>
-            <img class="center-block" src="assets/img/appstore.png" alt="">
+            <img class="download-section__app-store center-block" src="assets/img/appstore.png" alt="">
           </div>
         </div>
       </div>

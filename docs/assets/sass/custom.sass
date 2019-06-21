@@ -1,0 +1,260 @@
+@charset "utf-8";
+// CUSTOM VARIABLES
+$primary: #cc0033;
+$footer-background-color: #fff;
+$footer-padding: 2rem 1.5rem;
+$box-radius: 0;
+$box-shadow: none;
+$family-sans-serif: 'Lato', sans-serif;
+$title-weight: 900;
+$subtitle-color: gray;
+$subtitle-line-height: 1.77;
+$subtitle-size: 1.125rem;
+// CUSTOM CSS
+.center-block 
+    margin: 0 auto;
+    display: block;
+    position: relative;
+
+.navbar-item
+    margin: 0 15px; 
+
+.bg-overlay 
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #eb402c 0%, #d90647 100%);
+    transform: skewY(-16deg);
+    transform-origin: top left;
+.navbar
+    background: linear-gradient(90deg, #eb402c 0%, #d90647 100%);
+    padding: 20px;
+
+.navbar.is-primary .navbar-end > a.navbar-item:hover,
+.navbar.is-primary .navbar-end > a.navbar-item:focus
+    background-color: transparent !important
+
+.navbar.is-primary .navbar-end > a.navbar-item:before
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    height: 1px;
+    width: 0;
+    transform: translateY(-50%);
+    background: #ffffff;
+    transition: all 0.2s ease;
+
+.navbar.is-primary .navbar-end > a.navbar-item:hover:before
+    width: 100%;
+/* WELCOME SECTION */
+.welcome-section 
+    position: relative;
+
+.welcome-section__contents 
+    margin-top: 30%;
+
+.welcome-section .welcome-section__title 
+    font-size: 72px;
+    font-weight: 900;
+
+.welcome-section__image
+    margin-top: 20%;
+
+.welcome-section__btn-download 
+    margin-top: 30px;
+
+/* TESTIMONIALS */
+.testimonial-section 
+    margin: 3rem 0;
+    border-top: 2px solid whitesmoke;
+
+.testimonial-section .title 
+    margin-bottom: 3rem;
+
+.testimonial-item
+    position: relative;
+    border: 1px solid #e0e0e0;
+
+.testimonial-section .testimonial-item__name
+    margin-bottom: 0;
+
+.testimonial-item-middle:after
+    content: "";
+    position: absolute;
+    bottom: -.375rem;
+    left: 7%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    display: block;
+    height: .75rem;
+    width: .75rem;
+    margin-left: -5px;
+    background-color: hsla(0,0%,100%,.98);
+    pointer-events: none;
+
+.testimonial-item:not(.testimonial-item-middle):before 
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid whitesmoke;
+  border-bottom: 10px solid transparent;
+  left: 7%;
+  bottom: -21px;
+
+.testimonial-item:not(.testimonial-item-middle):after
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #fff;
+  border-bottom: 10px solid transparent;
+  left: 7%;
+  bottom: -18px;
+
+.testimonial-item.testimonial-item-middle 
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border: none;
+
+.testimonial-item .testimonial-message 
+    font-style: italic;
+
+
+/* FEATURE SECTION */
+.feature-section 
+    background: linear-gradient(90deg, #eb402c 0%, #d90647 100%);
+    position: relative;
+    margin: 200px 0;
+    min-height: 83vh !important;
+
+.feature-item
+    margin-bottom: 20px;
+
+.feature-section .title 
+    margin-bottom: 10px !important;
+
+.feature-section__mobile-phone
+    position: absolute;
+    top: -221px;
+    left: 32%;
+
+/* SUBSCRIBE */
+.subscribe-section 
+    margin: 3rem 0;
+
+.newsletter-email__input
+    background: #f8f8f8;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    border-radius: 1.5625em;
+    width: 100%;
+    color: gray;
+    height: 100%;
+    padding: 0.78125em 1.9375em;
+    outline: 0;
+    transition: all 0.25s ease;
+
+.newsletter-email
+    width: 50%;
+
+.newsletter-email .btn--subscribe
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    max-width: 11.25rem;
+    margin-top: 0;
+
+.btn--subscribe
+    color: #ffffff;
+    background: linear-gradient(90deg, #eb402c 0%, #d90647 100%);
+    width: 100%;
+    box-shadow: 0px 10px 30px 0px rgba(223, 27, 61, 0.3);
+    font-size: 1rem;
+    padding: 0.78125em 0;
+    border: none;
+    border-radius: 1.5625em;
+    font-weight: 700;
+    display: block;
+    cursor: pointer;
+    outline: 0;
+    transition: all 0.25s ease;
+
+/* DOWNLOAD SECTION */
+.download-section 
+    margin: 3rem 0;
+    border-top: 2px solid whitesmoke;
+
+.download-section__app-store
+    margin-top: 70px;
+
+/* FOOTER */
+.footer 
+    border-top: 1px solid whitesmoke;
+
+.footer-link 
+    color: #808080;
+
+.footer__language-dropdown
+    float: right;
+
+@media screen and (max-width: 768px)
+    .welcome-section__contents
+        margin-top: 0;
+
+    .welcome-section__btn-download
+        margin: 0 auto;
+        display: block !important;
+
+    .feature-section
+        margin: 0;
+        min-height: unset !important;
+
+    .feature-section__mobile-phone
+        position: relative;
+        top: unset;
+        left: unset;
+
+    .feature-section img
+        margin: 0 auto;
+        display: block !important;
+
+    .footer__language-dropdown
+        float: left;
+
+
+@media only screen and (max-width: 1023px) and (min-width:  769px)
+    .feature-section
+        margin: 0;
+        min-height: unset !important;
+
+    .feature-section__mobile-phone
+        position: relative;
+        top: unset;
+        left: unset;
+
+@media only screen and (max-width: 1215px) and (min-width:  1024px)
+    .feature-section
+        margin: 0;
+        min-height: unset !important;
+
+    .feature-section__mobile-phone
+        position: relative;
+        top: unset;
+        left: unset;
+// @media only screen and (max-width: 1407px) and (min-width:  1216px)
+
+// @media screen and (min-width: 1408px)
+    // IMPORT BULMA
+@import "../../../node_modules/bulma/bulma.sass";

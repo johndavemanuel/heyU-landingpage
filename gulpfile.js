@@ -26,6 +26,12 @@ gulp.task('js', function() {
 });
 
 
+// Move the javascript files into our /src/js folder
+gulp.task('docs', function() {
+    return gulp.src(['src/**/*'])
+        .pipe(gulp.dest("docs"))
+});
+
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass'], function() {
 

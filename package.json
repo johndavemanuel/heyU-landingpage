@@ -9,7 +9,7 @@
   "author": "johndavemanuel",
   "license": "ISC",
   "dependencies": {
-    "bulma": "^0.7.4",
+    "bulma": "^0.9.2",
     "bulma-start": "0.0.3"
   },
   "devDependencies": {
